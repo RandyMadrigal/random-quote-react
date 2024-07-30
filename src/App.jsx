@@ -1,3 +1,5 @@
+import { QuoteContainer } from "./components/QuoteContainer";
+
 export const App = () => {
-  return <>App</>;
+  return <QuoteContainer />;
 };
