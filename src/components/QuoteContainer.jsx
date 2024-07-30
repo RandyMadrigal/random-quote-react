@@ -27,7 +27,7 @@ export const QuoteContainer = () => {
   }, [next]);
 
   return (
-    <div className="bg-gray-700 flex flex-col items-center justify-center min-h-screen">
+    <div className="bg-gray-700 flex flex-col items-center justify-center min-h-screen p-4">
       {data && <Quote item={data} handleClick={handleClick} />}
     </div>
   );
