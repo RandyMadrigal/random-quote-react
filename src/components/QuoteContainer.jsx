@@ -5,18 +5,20 @@ import { NextQuote } from "../helpers/NextQuote";
 import "../index.css";
 
 export const QuoteContainer = () => {
-  const [data, setData] = useState({});
+  const [data, setData] = useState(null);
   const [next, setNext] = useState(0);
+  const [totalQuotes,setTotalQuotes] = useState(0);
 
   const handleClick = () => {
-    setNext(NextQuote(data.length));
+    setNext(NextQuote(totalQuotes));
   };
 
   useEffect(() => {
     const getData = async () => {
       try {
         const res = await getQuotes(next);
-        setData(res);
+        setData(res.Quote);
+        setTotalQuotes(res.totalQuotes)
       } catch (err) {
         console.log(err);
       }
