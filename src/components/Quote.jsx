@@ -10,7 +10,7 @@ export const Quote = ({ item, handleClick }) => {
   return (
     <>
       <div
-        className="bg-white w-full max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl h-auto text-wrap flex flex-col rounded-3xl shadow-xl shadow-black pt-10 px-10 md:px-10 pb-6 "
+        className="bg-white w-full max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl h-auto text-wrap flex flex-col rounded-3xl shadow-xl shadow-black pt-10 px-10 md:px-10 pb-6"
         id="quote-box"
       >
         <QuoteText quote={quote} />

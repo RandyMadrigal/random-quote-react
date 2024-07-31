@@ -7,7 +7,7 @@ export const App = () => {
 
   return (
     <AnimateContext.Provider value={{ animation, setAnimation }}>
-      <QuoteContainer />;
+      <QuoteContainer />
     </AnimateContext.Provider>
   );
 };

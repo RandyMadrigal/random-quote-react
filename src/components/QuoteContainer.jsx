@@ -17,7 +17,7 @@ export const QuoteContainer = () => {
     setTimeout(() => {
       setNext(NextQuote(totalQuotes));
       setAnimation(false);
-    }, 1200);
+    }, 1000);
   };
 
   useEffect(() => {
@@ -41,7 +41,7 @@ export const QuoteContainer = () => {
   }, [next]);
 
   return (
-    <div className="bg-gray-700 flex flex-col items-center justify-center min-h-screen p-4">
+    <div className="bg-gray-700 flex flex-col items-center justify-center min-h-screen h-screen p-4">
       {data && <Quote item={data} handleClick={handleClick} />}
     </div>
   );
