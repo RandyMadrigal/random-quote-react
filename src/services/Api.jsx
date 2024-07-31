@@ -10,14 +10,13 @@ export const getQuotes = async (index) => {
     }
 
     const data = await res.json();
-    
+
     const obj = {
-      Quote : data.quotes[index],
+      Quote: data.quotes[index],
       totalQuotes: data.quotes.length,
-    }
+    };
 
-    return obj
-
+    return obj;
   } catch (err) {
     console.log(err);
     throw err;
