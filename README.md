@@ -21,12 +21,12 @@
 1. Clone the repository:
    ```bash
    git clone https://github.com/RandyMadrigal/random-quote-react.git
-2. Navega al directorio del proyecto.
-
-3. Instala las dependencias.
+2. Navigate to the project directory.
+   
+3. Install the dependencies:
     ```
     npm install || npm i
-4. Inicia la aplicación.
+4. Start the app:
     ```
     npm run dev 
 ## Usage
